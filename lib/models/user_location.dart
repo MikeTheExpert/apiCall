@@ -2,7 +2,7 @@ class Location {
   final String city;
   final String state;
   final String country;
-  final String postcode;
+  final dynamic postcode;
   final StreetLocation streetLocation;
   final LocationTimezone timezone;
 
@@ -28,7 +28,7 @@ class LocationTimezone {
 }
 
 class StreetLocation {
-  final String number;
+  final int number;
   final String name;
 
   StreetLocation({required this.number, required this.name});

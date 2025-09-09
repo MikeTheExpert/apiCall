@@ -1,4 +1,5 @@
 import 'package:api_calls/models/user_dob.dart';
+import 'package:api_calls/models/user_img.dart';
 import 'package:api_calls/models/user_location.dart';
 import 'package:api_calls/models/user_name.dart';
 import 'package:api_calls/models/user_reg.dart';
@@ -13,6 +14,7 @@ class Users {
   final DateOfBirth dob;
   final RegDate registered;
   final Location location;
+  final UserImg picture;
   Users({
     required this.email,
     required this.cell,
@@ -23,5 +25,6 @@ class Users {
     required this.registered,
     required this.dob,
     required this.location,
+    required this.picture,
   });
 }
